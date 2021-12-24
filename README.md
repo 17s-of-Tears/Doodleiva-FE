@@ -1,11 +1,8 @@
-# next typescript template
+# Doodleiva 🖌
 
-next typescript template
+`Doodleiva(두드리바)`는 다양한 사람들이 직접그린 그림을 모든 사람들에게 공유하고 소통하며 많은 활동을 할 수 있는 웹 애플리케이션 입니다.<br />
 
-- next
-- typescript
-- eslint
-- prettier
-- husky
-- lint-staged
-- sass (필요없으면 지우기)
+> 개발 기간: 2021.12.24 ~ ing <br />
+> 개발 인원: 1명 (개인 프로젝트)
+
+<br />

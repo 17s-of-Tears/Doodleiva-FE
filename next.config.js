@@ -1,9 +1,8 @@
-const path = require('path')
-
-/** @type {import('next').NextConfig} */
-module.exports = {
-	reactStrictMode: true,
-	sassOptions: {
-		includePaths: [path.resolve(__dirname, './pages')]
-	}
+/**
+ * @type {import('next').NextConfig}
+ */
+const nextConfig = {
+	reactStrictMode: true
 }
+
+module.exports = nextConfig

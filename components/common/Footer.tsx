@@ -1,6 +1,6 @@
 import React, { useCallback } from 'react'
-import styled from 'styled-components'
 import { AiFillGithub } from 'react-icons/ai'
+import styled from 'styled-components'
 
 const FooterContainer = styled.footer`
 	width: 85%;

@@ -1,9 +1,10 @@
-import AppLayout from 'components/layout/AppLayout'
-import Link from 'next/link'
+import { useCallback } from 'react'
+import Router from 'next/router'
 import styled from 'styled-components'
 
-import { Button } from 'style/common'
+import AppLayout from 'components/layout/AppLayout'
 import HomeImage from 'components/HomeImage'
+import { Button } from 'style/Common'
 
 const HomeContainer = styled.div`
 	display: flex;
@@ -33,7 +34,24 @@ const HomeContainer = styled.div`
 	}
 `
 
+const HomeButton = styled(Button)`
+	width: 200px;
+	height: 60px;
+	border-radius: 10px;
+	size: 25px;
+	background: ${({ theme }) => theme.colors.primary};
+	@media ${({ theme }) => theme.device.tablet} {
+		width: ${200 * 0.65}px;
+		height: ${60 * 0.8}px;
+		font-size: ${25 * 0.7}px;
+	}
+`
+
 const Home = () => {
+	const onClickToMainPage = useCallback(() => {
+		Router.push('/main')
+	}, [])
+
 	return (
 		<AppLayout>
 			<HomeContainer>
@@ -44,13 +62,7 @@ const Home = () => {
 					한눈에 구경 해봐요!
 				</h1>
 				<span>아니면 내가 그린 낙서를 모두에게 보여줄까요?</span>
-				<Link href="/main">
-					<a>
-						<Button width={200} height={60} radius={10} size={25} bgColor="p">
-							시작하기
-						</Button>
-					</a>
-				</Link>
+				<HomeButton onClick={onClickToMainPage}>시작하기</HomeButton>
 			</HomeContainer>
 			<HomeImage />
 		</AppLayout>

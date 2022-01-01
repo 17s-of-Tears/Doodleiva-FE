@@ -16,7 +16,7 @@ const fontSizes = {
 const deviceSizes = {
 	mobileS: '320px',
 	mobileM: '375px',
-	mobileL: '450px',
+	mobileL: '425px',
 	tablet: '768px',
 	tabletL: '1024px',
 	NoteBook: '1440px'

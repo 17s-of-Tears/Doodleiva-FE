@@ -1,10 +1,10 @@
-import React, { useCallback } from 'react'
+import { useCallback } from 'react'
 import { AiFillGithub } from 'react-icons/ai'
 import styled from 'styled-components'
 
 const FooterContainer = styled.footer`
 	width: 85%;
-	height: 80px;
+	height: 70px;
 	margin: 0 auto;
 	background: ${({ theme }) => theme.colors.white};
 	border-radius: 10px 10px 0 0;

@@ -12,10 +12,12 @@ type ChangeType =
 	| undefined
 type setStateType = Dispatch<SetStateAction<string>>
 
-export default (initialValue = ''): [string, ChangeType, setStateType] => {
+const useInput = (initialValue = ''): [string, ChangeType, setStateType] => {
 	const [value, setValue] = useState(initialValue)
 	const onChangeValue = useCallback((e: ChangeEvent<HTMLInputElement>) => {
 		setValue(e.target.value)
 	}, [])
 	return [value, onChangeValue, setValue]
 }
+
+export default useInput

@@ -18,6 +18,15 @@ const GlobalStyle = createGlobalStyle`
       display: none !important; 
     }
   }
+  a {
+    color: #1ABC9C;
+    font-weight: 300;
+    text-decoration: none;
+    transition: 0.5s;
+    & :hover {
+      color: #16A085;
+    }
+  }
   @font-face {
     font-family: "Noto Sans KR";
     font-weight: 900;

@@ -9,13 +9,14 @@ const fontSizes = {
 	xl: calcRem(20),
 	xxl: calcRem(22),
 	xxxl: calcRem(24),
+	subTitleSize: calcRem(35),
 	titleSize: calcRem(45)
 }
 
 const deviceSizes = {
 	mobileS: '320px',
 	mobileM: '375px',
-	mobileL: '450px',
+	mobileL: '425px',
 	tablet: '768px',
 	tabletL: '1024px',
 	NoteBook: '1440px'

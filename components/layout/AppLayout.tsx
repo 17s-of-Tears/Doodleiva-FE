@@ -1,8 +1,9 @@
 import { FC, ReactNode } from 'react'
-import Footer from 'components/common/Footer'
-import Header from 'components/common/Header'
-import styled from 'styled-components'
 import { useRouter } from 'next/router'
+import styled from 'styled-components'
+
+import Header from 'components/common/Header'
+import Footer from 'components/common/Footer'
 
 interface Props {
 	children: ReactNode
@@ -20,7 +21,9 @@ const AppLayout: FC<Props> = ({ children }) => {
 
 	return (
 		<>
-			{router.asPath === '/' ? (
+			{router.asPath === '/' ||
+			router.asPath === '/login' ||
+			router.asPath === '/signup' ? (
 				<HomePageContainer>
 					<Header />
 					{children}

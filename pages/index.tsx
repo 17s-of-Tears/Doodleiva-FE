@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 import AppLayout from 'components/layout/AppLayout'
 import HomeImage from 'components/HomeImage'
-import { Button } from 'style/Common'
+import { Button } from 'style/common'
 
 const HomeContainer = styled.div`
 	display: flex;

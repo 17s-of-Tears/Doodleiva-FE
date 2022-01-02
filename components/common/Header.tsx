@@ -5,7 +5,7 @@ import Link from 'next/link'
 import Router from 'next/router'
 import styled from 'styled-components'
 
-import { Button } from 'style/Common'
+import { Button } from 'style/common'
 
 const AppToolBar = styled.header`
 	width: 100%;

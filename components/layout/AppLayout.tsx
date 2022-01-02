@@ -18,7 +18,6 @@ const HomePageContainer = styled.div`
 
 const AppLayout: FC<Props> = ({ children }) => {
 	const router = useRouter()
-
 	return (
 		<>
 			{router.asPath === '/' ||

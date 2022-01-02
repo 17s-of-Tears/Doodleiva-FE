@@ -31,7 +31,6 @@ export const Input = styled.input`
 	padding: 0 10px;
 	border: 1px solid #eee;
 	border-radius: 5px;
-	background: #f3f3f3;
 	font-family: 'Noto Sans KR', sans-serif;
 	font-size: ${({ theme }) => theme.fontSizes.base};
 	color: ${({ theme }) => theme.colors.gray_b};

@@ -1,7 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 import AppLayout from 'components/layout/AppLayout'
-import { Button, Card, Input } from 'style/common'
+import { Button, Input } from 'style/common'
+import CardForm from 'components/CardForm'
+
 
 const Maincontainer = styled.div`
 	.title {
@@ -16,7 +18,6 @@ const Maincontainer = styled.div`
 		display: flex;
 		justify-content: center;
 	}
-
 	.popularTag {
 		display: grid;
 		justify-content: center;
@@ -24,32 +25,42 @@ const Maincontainer = styled.div`
 		grid-template-rows: 50px 50px;
 		gap: 50px;
 	}
+	.cardWrapper{
+		display: flex;
+		justify-content: center;
+		gap:15px;
+	}
+	.allPictureWrapper{
+		display:grid;
+		justify-content: center;
+		grid-template-columns: 360px 360px 360px 360px 360px;
+		grid-template-rows: 410px 410px;
+		gap:16px;
+	}
+	.contentTitle,
+	.contentTitlePlus{
+		font-size: ${({ theme }) => theme.fontSizes.subTitleSize};
+	}
+	.contentTitlePlus ::after{
+		content:"#";
+		color:#1abc9c;
+	}
 `
 const MainInput = styled(Input)`
 	margin: 5px;
 `
-
-const tagButton = styled(Button)`
-	margin: 5px;
+const Tagbutton = styled(Button)`
+	border-radius: 25px;
 `
-
 const Main = () => {
 	const hash = [
-		'#김코드싸개',
-		'#김코드싸개',
-		'#김코드싸개',
-		'#김코드싸개',
-		'#김코드싸개',
-		'#김코드싸개',
-		'#김코드싸개',
-		'#김코드싸개',
-		'#김코드싸개',
-		'#김코드싸개',
-		'#김코드싸개',
-		'#김코드싸개',
-		'#김코드싸개',
-		'#김코드싸개'
+		'#김코드싸개', '#김코드싸개', '#김코드싸개', '#김코드싸개', '#김코드싸개', '#김코드싸개', '#김코드싸개',
+		'#김코드싸개', '#김코드싸개', '#김코드싸개', '#김코드싸개', '#김코드싸개', '#김코드싸개', '#김코드싸개'
 	]
+	const popular: String[] = ['#김코드싸개', '#김코드싸개', '#김코드싸개', '#김코드싸개'];
+	const allContent: String[] = [
+		'#김코드싸개', '#김코드싸개', '#김코드싸개', '#김코드싸개', '#김코드싸개',
+		'#김코드싸개', '#김코드싸개', '#김코드싸개', '#김코드싸개', '#김코드싸개']
 
 	return (
 		<AppLayout>
@@ -61,20 +72,25 @@ const Main = () => {
 				<div className="inputWrapper">
 					<MainInput />
 				</div>
-				<h1>#인기</h1>
+				<label className="contentTitlePlus">인기</label>
 				<div className="popularTag">
 					{hash.map((v, i) => (
-						<Button key={i}>{v}</Button>
+						<Tagbutton key={i}>{v}</Tagbutton>
 					))}
 				</div>
-				<h1>이달의 인기 작품</h1>
+				<label className="contentTitle">이달의 인기 작품</label>
 				<div className="cardWrapper">
-					<Card>김코드</Card>
+					{popular.map((v, i) => (
+						<CardForm />
+					))}
 				</div>
-				<h1>이달의 인기 작품</h1>
+				<label className="contentTitle">모든 작품 모아보기</label>
 				<div className="allPictureWrapper">
-					<Card>김코드</Card>
+					{allContent.map((v, i) => (
+						<CardForm />
+					))}
 				</div>
+
 			</Maincontainer>
 		</AppLayout>
 	)

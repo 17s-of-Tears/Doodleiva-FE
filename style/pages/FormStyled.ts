@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Button, Card, Input } from 'style/Common'
+import { Button, Card, Input } from 'style/common'
 
 export const FormCard = styled(Card)`
 	width: auto;

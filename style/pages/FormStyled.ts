@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import { Button, Card, Input } from 'style/common'
 
+/* signup & login page styled-component */
 export const FormCard = styled(Card)`
 	width: auto;
 	height: auto;

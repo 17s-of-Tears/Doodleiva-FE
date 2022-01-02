@@ -12,6 +12,7 @@ const GlobalStyle = createGlobalStyle`
     line-height: 1.4;
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 1em;
+    box-sizing: border-box;
     color: #333;
     -ms-overflow-style: none;
     &::-webkit-scrollbar { 

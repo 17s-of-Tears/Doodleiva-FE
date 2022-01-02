@@ -20,7 +20,7 @@ const SerachContainer = styled.div`
 		color: #777;
 	}
 	.serach-form-box {
-		margin: 50px 0;
+		margin: 50px 0 0;
 		display: flex;
 		align-items: center;
 		gap: 10px;

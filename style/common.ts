@@ -51,3 +51,30 @@ export const Input = styled.input`
 		}
 	}
 `
+
+export const Avatar = styled.img`
+	width: 100px;
+	border-radius: 50%;
+`
+
+export const ImageBox = styled.div`
+	display: block;
+	overflow: hidden;
+	height: 200px;
+	width: 200px;
+	cursor: pointer;
+	transition: 0.5s;
+	box-shadow: 5px 5px 10px ${({ theme }) => theme.colors.gray_w};
+	border-radius: 10px;
+	> img {
+		display: block;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		-ms-interpolation-mode: bicubic;
+	}
+	&:hover {
+		filter: brightness(60%);
+		z-index: 0;
+	}
+`

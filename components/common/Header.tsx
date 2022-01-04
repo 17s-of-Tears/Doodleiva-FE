@@ -14,6 +14,7 @@ const AppToolBar = styled.header`
 	box-shadow: 0px 5px 10px ${({ theme }) => theme.colors.gray_w};
 	top: 0;
 	position: sticky;
+	z-index: 10;
 	> div {
 		height: 100%;
 		margin: 0 10%;

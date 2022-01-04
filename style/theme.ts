@@ -9,6 +9,7 @@ const fontSizes = {
 	xl: calcRem(20),
 	xxl: calcRem(22),
 	xxxl: calcRem(24),
+	big: calcRem(30),
 	subTitleSize: calcRem(35),
 	titleSize: calcRem(45)
 }

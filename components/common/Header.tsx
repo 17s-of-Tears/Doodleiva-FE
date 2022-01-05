@@ -55,9 +55,7 @@ const NavButton = styled(Button)<{ bgColor: string }>`
 `
 
 const Header = () => {
-	const isMobile = useMediaQuery({
-		query: '(max-width: 425px)'
-	})
+	const isMobile = useMediaQuery({ query: '(max-width: 425px)' })
 
 	const onClickToPage = useCallback(
 		(to: string) => () => {

@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-
 import { Avatar, Button } from 'style/common'
 
 const Container = styled.div`

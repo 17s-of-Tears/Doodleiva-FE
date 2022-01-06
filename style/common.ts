@@ -57,21 +57,26 @@ export const Avatar = styled.img`
 	border-radius: 50%;
 `
 
-export const ImageBox = styled.div`
-	display: block;
-	overflow: hidden;
-	height: 200px;
-	width: 200px;
-	cursor: pointer;
+export const ImageBox = styled.div<{ img: string }>`
+	position: relative;
+	width: 100%;
 	transition: 0.5s;
-	box-shadow: 5px 5px 10px ${({ theme }) => theme.colors.gray_w};
-	border-radius: 10px;
-	> img {
-		display: block;
+	cursor: pointer;
+	> div {
+		position: absolute;
 		width: 100%;
 		height: 100%;
-		object-fit: cover;
-		-ms-interpolation-mode: bicubic;
+		border-radius: 10px;
+		box-shadow: 5px 5px 10px ${({ theme }) => theme.colors.gray_w};
+		background-image: url(${({ img }) => img});
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	&::after {
+		content: '';
+		display: block;
+		padding-bottom: 100%;
 	}
 	&:hover {
 		filter: brightness(60%);

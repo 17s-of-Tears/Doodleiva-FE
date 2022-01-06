@@ -3,12 +3,7 @@ import { toast } from 'react-toastify'
 import Link from 'next/link'
 
 import useInput from 'hooks/useInput'
-import {
-	FormButton,
-	FormCardContent,
-	FormCardFooter,
-	FormInput
-} from 'style/pages/FormStyled'
+import { FormButton, FormCardContent, FormCardFooter, FormInput } from './style'
 
 const SignupForm = () => {
 	const [email, onChangeEmail] = useInput()

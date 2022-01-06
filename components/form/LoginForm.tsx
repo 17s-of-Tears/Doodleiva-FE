@@ -2,12 +2,7 @@ import { ChangeEvent, useCallback } from 'react'
 import Link from 'next/link'
 
 import useInput from 'hooks/useInput'
-import {
-	FormButton,
-	FormCardContent,
-	FormCardFooter,
-	FormInput
-} from 'style/pages/FormStyled'
+import { FormButton, FormCardContent, FormCardFooter, FormInput } from './style'
 
 const LoginForm = () => {
 	const [email, onChangeEmail] = useInput()

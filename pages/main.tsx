@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 
-import { Button, Card } from 'style/common'
 import AppLayout from 'components/layout/AppLayout'
 import Serach from 'components/common/Serach'
+import { Button, Card } from 'style/common'
 
 const Maincontainer = styled.div`
 	.popularTag {
@@ -12,9 +12,6 @@ const Maincontainer = styled.div`
 		grid-template-rows: 50px 50px;
 		gap: 50px;
 	}
-`
-const tagButton = styled(Button)`
-	margin: 5px;
 `
 
 const Main = () => {

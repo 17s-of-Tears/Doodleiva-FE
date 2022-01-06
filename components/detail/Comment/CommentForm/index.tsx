@@ -1,33 +1,13 @@
-import styled from 'styled-components'
-import { Avatar, Button, Input } from 'style/common'
-import useInput from 'hooks/useInput'
 import { ChangeEvent, useCallback, useRef } from 'react'
 import { toast } from 'react-toastify'
 
-const FromContainer = styled.form`
-	padding: 0 50px;
-	margin-top: 20px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	gap: 10px;
-`
-
-const CommentInput = styled(Input)`
-	width: 100%;
-	background-color: #f5f5f5;
-`
-
-const CommentButton = styled(Button)`
-	width: 100px;
-	height: 42px;
-	font-size: 18px;
-	border-radius: 5px;
-`
-
-const CoommentAvatar = styled(Avatar)`
-	width: 42px;
-`
+import useInput from 'hooks/useInput'
+import {
+	CommentButton,
+	CommentInput,
+	CoommentAvatar,
+	FromContainer
+} from './style'
 
 const CommentForm = () => {
 	const [comment, onChangeComment, setComment] = useInput('')

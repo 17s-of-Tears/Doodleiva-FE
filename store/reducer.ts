@@ -1,6 +1,5 @@
 import { AnyAction, CombinedState, combineReducers } from 'redux'
 import { HYDRATE } from 'next-redux-wrapper'
-
 import userSlice, { UserState } from 'store/user'
 
 export interface State {

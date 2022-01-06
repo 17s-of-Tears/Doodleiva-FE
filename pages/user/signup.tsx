@@ -1,6 +1,6 @@
 import AppLayout from 'components/layout/AppLayout'
 import SignupForm from 'components/form/SignupForm'
-import { FormCard, FormCardHeader, FormContainer } from 'style/pages/FormStyled'
+import { FormCard, FormCardHeader, FormContainer } from './style'
 
 const Signup = () => {
 	return (

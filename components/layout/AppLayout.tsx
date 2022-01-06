@@ -18,11 +18,12 @@ const HomePageContainer = styled.div`
 
 const AppLayout: FC<Props> = ({ children }) => {
 	const router = useRouter()
+	//? 밑에 조건 쳐내고 레이아웃 쪼개기
 	return (
 		<>
 			{router.asPath === '/' ||
-			router.asPath === '/login' ||
-			router.asPath === '/signup' ? (
+			router.asPath === '/user/login' ||
+			router.asPath === '/user/signup' ? (
 				<HomePageContainer>
 					<Header />
 					{children}

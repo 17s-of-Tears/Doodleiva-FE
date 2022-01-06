@@ -9,6 +9,7 @@ declare module 'styled-components' {
 			xl: string
 			xxl: string
 			xxxl: string
+			big: string
 			subTitleSize: string
 			titleSize: string
 		}

@@ -1,6 +1,6 @@
 import LoginForm from 'components/form/LoginForm'
 import AppLayout from 'components/layout/AppLayout'
-import { FormCard, FormCardHeader, FormContainer } from 'style/pages/FormStyled'
+import { FormCard, FormCardHeader, FormContainer } from './style'
 
 const Login = () => {
 	return (
